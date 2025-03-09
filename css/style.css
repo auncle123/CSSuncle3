@@ -1,1 +1,50 @@
 
+* {
+  font-size: small ;
+  margin: 1px ;
+  padding: 1px ;
+}
+
+body {
+  counter-reset: nu;
+}
+
+div {
+  counter-reset: u;
+}
+p::before {
+  counter-increment:nu;
+  content: counter(nu) " . ";
+}
+
+h4::before {
+  counter-increment: u;
+  content: counter(u) " _ ";
+}
+
+h1{
+  text-align: center ;
+}
+
+h2{
+  text-align: right ;
+  margin-right: 30px ;
+}
+
+h2 b {
+  font-size: large ;
+}
+
+h4 {
+  margin-left: 30px ;
+}
+p {
+  border-bottom: 2px double silver;
+  margin-right: 150px;
+}
+
+a {
+  color: #000;
+  
+}
+
